@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="skkykU" name="GuitarSuite" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="H2SlZE" name="GuitarSuite">
+    <GROUP id="{2F354236-D99D-BB2C-6B23-8AAA92A2268B}" name="Source">
+      <FILE id="Xr4x5m" name="ManualWahDSP.h" compile="0" resource="0" file="Source/ManualWahDSP.h"/>
+      <FILE id="S33UF6" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="t4foZf" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="JwG4oU" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="M1H4tY" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <FILE id="zHQ4XF" name="CompressorDSP.cpp" compile="1" resource="0"
+          file="Source/CompressorDSP.cpp"/>
+    <FILE id="Fkrqwf" name="CompressorDSP.h" compile="0" resource="0" file="Source/CompressorDSP.h"/>
+    <FILE id="H2uifM" name="GateDSP.cpp" compile="1" resource="0" file="Source/GateDSP.cpp"/>
+    <FILE id="cKH7oK" name="GateDSP.h" compile="0" resource="0" file="Source/GateDSP.h"/>
+    <FILE id="VsJk5z" name="ManualWahDSP.cpp" compile="1" resource="0"
+          file="Source/ManualWahDSP.cpp"/>
+    <FILE id="stafzk" name="OverdriveDSP.cpp" compile="1" resource="0"
+          file="Source/OverdriveDSP.cpp"/>
+    <FILE id="bADz9d" name="OverdriveDSP.h" compile="0" resource="0" file="Source/OverdriveDSP.h"/>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2026 targetFolder="Builds/VisualStudio2026">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="GuitarSuite"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="GuitarSuite"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1080;/juce-9.0.2-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2026>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
