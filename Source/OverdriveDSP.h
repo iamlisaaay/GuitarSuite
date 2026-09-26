@@ -9,17 +9,21 @@
 */
 
 #pragma once
-
+#include <JuceHeader.h>
 class OverdriveDSP
 {
 public:
     OverdriveDSP() = default;
     ~OverdriveDSP() = default;
 
-    void prepareSampleRate(float newSampleRate) { sampleRate = newSampleRate; }
-
+    void prepareSampleRate(float newSampleRate) {
+        sampleRate = newSampleRate;
+        drive.reset(sampleRate, 0.02);
+    }
     // Приймаємо налаштування з інтерфейсу
-    void setDrive(float newDrive) { drive = newDrive; }
+    void setDrive(float newDrive) {
+        drive.setTargetValue(newDrive);
+    }
     void setVolume(float newVolume) { volume = newVolume; }
 
     float processSample(float inputSample);
@@ -28,6 +32,6 @@ private:
     float sampleRate = 44100.0f;
 
     // Значення за замовчуванням
-    float drive = 1.0f;   // Множник вхідного сигналу 
+    juce::SmoothedValue<float> drive;   // Множник вхідного сигналу 
     float volume = 1.0f;  // Гучність на виході 
 };

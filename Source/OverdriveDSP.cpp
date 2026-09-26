@@ -11,8 +11,8 @@
 #include "OverdriveDSP.h"
 #include <cmath>
 float OverdriveDSP::processSample(float inputSample) {
-	
-	float processedSample = std::tanh(inputSample * drive);
+	float currentDrive = drive.getNextValue();
+	float processedSample = std::tanh(inputSample * currentDrive);
 	processedSample *= volume;
 	return processedSample;
 }
