@@ -67,23 +67,4 @@ GuitarSuite.jucer       – Projucer project file
 
 Each effect is a small standalone class with the same interface (`prepareSampleRate()`, setters for parameters, `processSample()`), so adding a new effect means writing one more class and plugging it into `processBlock()`.
 
-## Roadmap
 
-- [ ] Saving and loading plugin state (settings are not restored when the DAW project is reopened yet)
-- [ ] Presets
-- [ ] On/off switches for the gate and overdrive, overdrive tone and level controls
-- [ ] More effects: distortion / fuzz, EQ, delay, reverb, chorus, amp and cabinet simulation
-- [ ] Reorderable effect chain
-- [ ] Mono input support
-- [ ] Custom UI design
-- [ ] macOS build (AU / VST3)
-
-## Known limitations
-
-- Plugin state is not saved yet (`getStateInformation` / `setStateInformation` are empty).
-- The processing code expects a stereo track.
-- Only tested on Windows in REAPER so far.
-
-## License
-
-Not specified yet.
